@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<variables>
+    
+	<variable name="borderdistance" value="10.0"/>
+
+	
+	<!-- User configurable -->
+	
+	<!-- h-->
+	<variable name="fullSeatHeight" value="460"/>
+	<variable name="fullSeatLength" value="310"/>
+	<variable name="alphaDeg" value="17"/>
+	<variable name="betaDeg" value="2"/>
+	<!-- Axle position on front leg delta * FrontLegLength -->
+	<variable name="delta" value="0.5" />
+	
+    <variable name="fullSeatwidth" value="320.0"/>
+    <variable name="fullUpright" value="50.0"/>
+	
+	
+	<variable name="fullChairThickness" value="25.0"/>
+	<variable name="ratio" value="1.0"/>
+
+    <variable name="fullSliderwidth" value="7.0"/>
+    <variable name="fullHoleRadius" value="3.9"/>
+	<variable name="fullHingeHoleRadius" value="4"/>
+	<variable name="fullSeatHingeWidth" value="20.0"/>
+	<variable name="fullSeatHingeHeight" value="30.0"/>
+	<variable name="fullSeatHingeOffSet" value="8.0"/>
+
+	<variable name="fullSeatAxleDistance" value="7.5"/>
+	<variable name="fullTopCarryWidth" value="100.0"/>
+	<variable name="fullCutLength" value="750.0"/>
+
+	<!-- Autoscale expressions -->
+	<expression name="alpha" print="true" expression="(${alphaDeg}*Math.PI)/180"/>
+	<expression name="beta" print="true" expression="(${betaDeg}*Math.PI)/180"/>
+	<!-- s -->
+	<expression name="fullhorizontalSeatLength" print="true" expression="${fullSeatLength} * Math.cos(${beta})" />
+	<expression name="horizontalseatlength" expression="${fullhorizontalSeatLength}/${ratio}" />
+	
+	<expression name="fullFrontLegLength" print="true" expression="${fullSeatHeight}/Math.cos(${alpha})"/>
+	<expression name="frontleglength" expression="(${fullFrontLegLength})/${ratio}"/>
+	<!-- FR-->
+	<expression name="fullFeetSpan" print="true" expression="(${fullhorizontalSeatLength}*${delta})/(1-${delta})"/>
+	<expression name="feetspan" expression="${fullFeetSpan}/${ratio}"/>
+	
+	<!-- PR -->
+	<expression name="fullRearLegLength" print="true" expression="Math.sqrt(Math.pow(${fullSeatHeight},2)+Math.pow((${fullhorizontalSeatLength}-${fullSeatHeight}*Math.tan(${alpha})+${fullFeetSpan}),2))"/>
+	<expression name="rearleglength" expression="${fullRearLegLength}/${ratio}"/>
+	
+	<!-- FT -->
+	<expression name="fullFulLength" print="false" expression="(${fullRearLegLength}+${fullhorizontalSeatLength})" />
+	<expression name="fullChairLength" print="true" expression="(${fullRearLegLength}+${fullhorizontalSeatLength})+2*${fullUpright}" />
+	<expression name="fullength" expression="${fullFulLength}/${ratio}" />
+	
+	<!-- Front Leg Slider -->
+	<expression name="fullLegSliderLength" expression="${fullRearLegLength}-${fullFrontLegLength}" />
+	<expression name="legsliderlength" expression="${fullLegSliderLength}/${ratio}" />
+	
+	<!-- TL -->
+	<expression name="fullTopSliderLeftDistance" print="true" expression="${fullFrontLegLength}-((${fullSeatLength}*Math.sin(${beta}))/Math.cos(${alpha}))" />
+	<expression name="topsliderfeftdistance" expression="${fullTopSliderLeftDistance}/${ratio}" />
+	
+	<!-- FI -->
+	<expression name="fullFrontLegAxleDistance" print="true" expression="${delta}*${fullFrontLegLength}" />
+	<expression name="frontlegaxledistance" expression="${fullFrontLegAxleDistance}/${ratio}" />
+	
+	<!-- RI -->
+	<expression name="fullRearLegAxleDistance" print="true" expression="${delta}*${fullRearLegLength}" />
+	<expression name="rearlegaxledistance" expression="${fullRearLegAxleDistance}/${ratio}" />
+
+    <!--variable name="fullCutLength" value="780.0"/-->
+	
+    <expression name="chairthickness" expression="Math.max(${fullChairThickness}/${ratio}, 9.0)"/>
+	
+    <expression name="upright" expression="${fullUpright}/${ratio}"/>
+    <!--expression name="height" expression="${fullHeight}/${ratio}"/-->
+    <expression name="seatwidth" expression="${fullSeatwidth}/${ratio}"/>
+
+    <expression name="sliderwidth" expression="Math.max(${fullSliderwidth}/${ratio}, 4.0)"/>
+
+    <expression name="seathingewidth" expression="Math.max(${fullSeatHingeWidth}/${ratio}, 7.5)"/>
+    <expression name="seathingeheight" expression="Math.max(${fullSeatHingeHeight}/${ratio}, 13.0)"/>
+    <expression name="seathingeoffSet" expression="Math.max(${fullSeatHingeOffSet}/${ratio}, 3.0)"/>
+    <expression name="seatcrenelhingedistance" expression="Math.max(${chairthickness}/5 + ${fullHingeHoleRadius}, 4.0)"/>
+    
+	<expression name="seatlength" expression="Math.max(${fullSeatLength}/${ratio}, 3.0)"/>
+
+    <expression name="seataxledistance" expression="Math.max(${fullSeatAxleDistance}/${ratio}, 5.0)"/>
+	<expression name="topcarrywidth" expression="${fullTopCarryWidth}/${ratio}"/>
+	<expression name="cutlength" expression="${fullCutLength}/${ratio}"/>
+	
+    <expression name="holeradius" expression="Math.max(${fullHoleRadius}/${ratio}, 2.9)"/>
+    <expression name="hingeholeradius" expression="Math.max(${fullHingeHoleRadius}/${ratio}, 1.5)"/>
+
+	<validation name="Chair will fall" expression="${fullFeetSpan} - ((${fullRearLegLength} + ${fullhorizontalSeatLength})*Math.sin(${alpha}))" validation=">0" />
+	
+</variables>
+

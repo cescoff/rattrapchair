@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<blue-print>
+	<!-- ********** -->
+	<!-- Main layer -->
+	<!-- ********** -->
+    <distance-unit>mm</distance-unit>
+	
+	<!-- Reference Point -->
+	<point x="${borderdistance}" y="${borderdistance}" name="GlobalTopLeftPoint" layer="Main" />
+
+	<point x="${fullSeatLength}" y="${fullFulLength}" name="F" layer="Main" />
+	<point x="F//Center//${fullFeetSpan}" y="F//Center//0" name="R" layer="Main" />
+	<point x="F//Center//+${fullFulLength}*Math.sin(${alpha})" y="F//Center//-(${fullFulLength}*Math.cos(${alpha}))" name="T" layer="Main" />
+	<point x="F//Center//+${fullFrontLegLength}*Math.sin(${alpha})-(${fullSeatLength}*Math.sin(${beta})*Math.tan(${alpha}))" y="F//Center//-(${fullFrontLegLength}*Math.cos(${alpha}))+(${fullSeatLength}*Math.sin(${beta}))/Math.cos(${alpha})" name="S" layer="Main" />
+	<point x="F//Center//+${fullFrontLegLength}*Math.sin(${alpha})-${fullSeatLength}" y="F//Center//-(${fullFrontLegLength}*Math.cos(${alpha}))" name="P" layer="Main" />
+	
+	<path name="FT" layer="Main" action="VIEW">
+		<point x="F//Center//0" y="F//Center//0" />
+		<point x="T//Center//0" y="T//Center//0" />
+	</path>
+	
+	<path name="PR" layer="Main" action="VIEW">
+		<point x="P//Center//0" y="P//Center//0" />
+		<point x="R//Center//0" y="R//Center//0" />
+	</path>
+	
+	<path name="PS" layer="Main" action="VIEW">
+		<point x="P//Center//0" y="P//Center//0" />
+		<point x="S//Center//0" y="S//Center//0" />
+	</path>
+	
+</blue-print>
+
