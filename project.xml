@@ -9,10 +9,10 @@
     <description>Customizable flat folding chair made out of wood</description>
     <presentation>This is a small multilayer flat folding chair. The idea consists in a wooden hinge based chair that is fully customizable through a set of parameters provided within this model page</presentation>
     <default>
-        <variable name="fullSeatHeight">460</variable>
-        <variable name="fullSeatLength">310</variable>
-        <variable name="fullSeatwidth">320</variable>
-        <variable name="fullUpright">50</variable>
-        <variable name="alphaDeg">17</variable>
+        <variable name="fullSeatHeight" display-name="Seat height" description="The height of the seat. In millimeters">460</variable>
+        <variable name="fullSeatLength" display-name="Seat length" description="The length of the seat. In millimeters">310</variable>
+        <variable name="fullSeatwidth" display-name="Seat width" description="The width of the seat. In millimeters">320</variable>
+        <variable name="fullUpright" display-name="Chair upright" description="The upright of the chair. In millimeters">50</variable>
+        <variable name="alphaDeg" display-name="Back angle" description="The angle of the back of the chair (regarding vertical line). In degrees">17</variable>
     </default>
 </project>
