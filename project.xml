@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project>
+	<name>Rat Trap Chair</name>
     <thumbnail-url>https://www.amazon.com/photos/share/KrAbRlo7ONp7tepYRq1wSZaWv2HNM3j4lp5JJHNR0ob</thumbnail-url>
     <variables-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/variables.xml</variables-url>
     <template-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/Chair.xml</template-url>
     <output-config-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/chairOutputConfig.xml</output-config-url>
     <dynamic-preview-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/chair_ShapeOutputConfig.xml</dynamic-preview-url>
+	<presentation>This is a small multilayer flat chair.</presentation>
     <default>
         <variable name="fullSeatHeight">460</variable>
         <variable name="fullSeatLength">310</variable>
