@@ -6,7 +6,8 @@
     <template-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/Chair.xml</template-url>
     <output-config-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/chairOutputConfig.xml</output-config-url>
     <dynamic-preview-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/chair_ShapeOutputConfig.xml</dynamic-preview-url>
-	<presentation>This is a small multilayer flat chair.</presentation>
+    <description>Customizable flat folding chair made out of wood</description>
+    <presentation>This is a small multilayer flat folding chair. The idea consists in a wooden hinge based chair that is fully customizable through a set of parameters provided within this model page</presentation>
     <default>
         <variable name="fullSeatHeight">460</variable>
         <variable name="fullSeatLength">310</variable>
