@@ -8,12 +8,13 @@
     <dynamic-preview-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/Chair_Shape.xml</dynamic-preview-url>
     <dynamic-preview-output-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/chair_ShapeOutputConfig.xml</dynamic-preview-output-url>
     <description>Customizable flat folding chair made out of wood</description>
-    <presentation>This is a small multilayer flat folding chair. The idea consists in a wooden hinge based chair that is fully customizable through a set of parameters provided within this model page</presentation>
+    <presentation>This is a small multilayer flat folding chair. The idea consists in a wooden hinge based chair that is fully customizable through a set of parameters provided within this model page. Each layer is 8mm span and is assembled one on the top of the other. This model is also interestening because it does not waste a lot of wood. You can change parameters to modify the chair shape. Play with it and download your custom chair</presentation>
     <default>
         <variable name="fullSeatHeight" display-name="Seat height" description="The height of the seat. In millimeters">460</variable>
         <variable name="fullSeatLength" display-name="Seat length" description="The length of the seat. In millimeters">310</variable>
         <variable name="fullSeatwidth" display-name="Seat width" description="The width of the seat. In millimeters">320</variable>
         <variable name="fullUpright" display-name="Chair upright" description="The upright of the chair. In millimeters">50</variable>
         <variable name="alphaDeg" display-name="Back angle" description="The angle of the back of the chair (regarding vertical line). In degrees">17</variable>
+	<variable name="fullSeatHingeWidth" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>    
     </default>
 </project>
