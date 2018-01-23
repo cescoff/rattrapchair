@@ -10,9 +10,9 @@
     <description>Customizable flat folding chair made out of wood</description>
     <presentation>&lt;p&gt;This is foldable chair project.&lt;/p&gt;&lt;p&gt;First the objectives are : &lt;ul&gt;&lt;li&gt;Take no space once folded&lt;/li&gt;&lt;li&gt;Waste less wood for building it&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;p&gt;The chair is composed of 3 different layers. The two &quot;external&quot; ones (that are actually visible) are quite the same (the rear one contains extrusions for the hinge). The one in the middle supports axles and sliders.&lt;/p&gt;&lt;p&gt;All layers are glued together guided by wood pegs.&lt;/p&gt;&lt;p&gt;A mounting documentation will come soon.&lt;/p&gt;&lt;p&gt;The application guarantees that the chair will not be dangerous (fall).&lt;/p&gt;&lt;p&gt;You can tune your model by using the different parameters offered within this page.&lt;/p&gt;</presentation>
     <default>
-        <variable name="fullSeatHeight" display-name="Seat height" description="The height of the seat. In millimeters">460</variable>
+        <variable name="fullSeatHeight" display-name="Seat height" description="The height of the seat. In millimeters">430</variable>
         <variable name="fullSeatLength" display-name="Seat length" description="The length of the seat. In millimeters">310</variable>
-        <variable name="fullSeatwidth" display-name="Seat width" description="The width of the seat. In millimeters">320</variable>
+        <variable name="fullSeatwidth" display-name="Seat width" description="The width of the seat. In millimeters">310</variable>
         <variable name="fullUpright" display-name="Chair upright" description="The upright of the chair. In millimeters">50</variable>
         <variable name="alphaDeg" display-name="Back angle" description="The angle of the back of the chair (regarding vertical line). In degrees">17</variable>
 	<variable name="fullSeatHingeWidth" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>
