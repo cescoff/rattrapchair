@@ -15,6 +15,7 @@
         <variable name="fullSeatwidth" display-name="Seat width" description="The width of the seat. In millimeters">320</variable>
         <variable name="fullUpright" display-name="Chair upright" description="The upright of the chair. In millimeters">50</variable>
         <variable name="alphaDeg" display-name="Back angle" description="The angle of the back of the chair (regarding vertical line). In degrees">17</variable>
-	<variable name="fullSeatHingeWidth" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>    
+	<variable name="fullSeatHingeWidth" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>
+	<variable name="fullCutLength" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>
     </default>
 </project>
