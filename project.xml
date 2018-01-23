@@ -16,6 +16,6 @@
         <variable name="fullUpright" display-name="Chair upright" description="The upright of the chair. In millimeters">50</variable>
         <variable name="alphaDeg" display-name="Back angle" description="The angle of the back of the chair (regarding vertical line). In degrees">17</variable>
 	<variable name="fullSeatHingeWidth" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>
-	<variable name="fullCutLength" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">20</variable>
+	<variable name="fullCutLength" display-name="Hinge tooth width" description="The length of the biggest part that should feet your laser cut machine">20</variable>
     </default>
 </project>
