@@ -18,4 +18,11 @@
 	<variable name="fullSeatHingeWidth" display-name="Hinge tooth width" description="The width of the hinge teeth. In millimeters">19</variable>
 	<variable name="fullCutLength" display-name="Laser machine max length" description="The length of the biggest part that should feet your laser cut machine">750</variable>
     </default>
+    <printable>
+        <variable name="fullhorizontalSeatLength" display-name="Horizontal seat length" description="">430</variable>
+        <variable name="fullFrontLegLength" display-name="The length of the chair front leg" description="">430</variable>
+	<variable name="fullRearLegLength" display-name="The length of the chair rear leg" description="">430</variable>
+        <variable name="fullFeetSpan" display-name="The feet span" description="">430</variable>
+	<variable name="fullChairLength" display-name="The length of the chair once folded" description="">430</variable>
+    </printable>
 </project>
