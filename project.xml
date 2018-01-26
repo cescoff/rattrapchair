@@ -13,7 +13,7 @@
         <variable name="fullSeatHeight" display-name="Seat height (distance from the floor)" unit="mm" description="In millimeters">430</variable>
         <variable name="fullSeatLength" display-name="Seat length" unit="mm" description="In millimeters">310</variable>
         <variable name="fullSeatwidth" display-name="Seat width" unit="mm" description="In millimeters">310</variable>
-        <variable name="fullUpright" display-name="Chair upright (visible only on the front of the chair)" unit="mm" description="In millimeters">50</variable>
+        <variable name="fullUpright" display-name="Chair upright (visible on the front of the chair)" unit="mm" description="In millimeters">50</variable>
         <variable name="alphaDeg" display-name="Back vertical axis angle" unit="degrees" description="In degrees">17</variable>
 	<variable name="fullSeatHingeWidth" display-name="Hinge crenel tooth width (minimum value)" unit="mm" description="In millimeters">19</variable>
 	<variable name="fullCutLength" display-name="Laser cut machine feat length" unit="mm" description="In millimeters">750</variable>
