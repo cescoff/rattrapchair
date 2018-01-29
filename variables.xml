@@ -94,8 +94,13 @@
     <expression name="holeradius" expression="Math.max(${fullHoleRadius}/${ratio}, 2.9)"/>
     <expression name="hingeholeradius" expression="Math.max(${fullHingeHoleRadius}/${ratio}, 1.5)"/>
 
-     <validation name="Chair will not be stable, it will fall" expression="${fullFeetSpan} - ((${fullRearLegLength} + ${fullhorizontalSeatLength})*Math.sin(${alpha}))" validation=">0" />
-     <validation name="Split length must be at least 700mm" expression="${fullCutLength} - 700" validation=">0" />
+    <expression name="fullTopSliderAxleWidth" expression="2*${sliderwidth}+${seatwidth}"/>
+    <expression name="fullSeatHingeAxleWidth" expression="${seatwidth} - 1"/>
+    <expression name="fullLegAxleWidth" expression="${seatwidth} + 2*${upright}"/>
+	
+	
+    <validation name="Chair will not be stable, it will fall" expression="${fullFeetSpan} - ((${fullRearLegLength} + ${fullhorizontalSeatLength})*Math.sin(${alpha}))" validation=">0" />
+    <validation name="Split length must be at least 700mm" expression="${fullCutLength} - 700" validation=">0" />
 	
 </variables>
 
