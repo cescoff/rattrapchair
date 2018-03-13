@@ -208,8 +208,8 @@
 
 	<path name="Body" layer="Main" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upright}" />
-		<point x="SeatHingeTopRight//Center//2*${upright}" y="SeatHingeTopRight//Center//-${upright}" />
-		<point x="SeatHingeBottomRight//Center//2*${upright}" y="SeatHingeBottomRight//Center//${upright}" />
+		<point x="SeatHingeTopRight//Center//(4/3)*${upright}" y="SeatHingeTopRight//Center//-${upright}" />
+		<point x="SeatHingeBottomRight//Center//(4/3)*${upright}" y="SeatHingeBottomRight//Center//${upright}" />
 		<point x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//${upright}" />
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upright}" />
 	</path>
