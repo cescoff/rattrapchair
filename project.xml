@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project>
 	<name>Rat Trap Chair</name>
-    <thumbnail-url>https://github.com/cescoff/rattrapchair/blob/master/chair_preview.jpeg?raw=true</thumbnail-url>
+    <thumbnail-url>https://github.com/cescoff/rattrapchair/raw/master/chair_thumbnail.JPG</thumbnail-url>
+    <previews>
+        <url>https://github.com/cescoff/rattrapchair/raw/master/chair_preview.jpeg</url>
+    </previews>
     <variables-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/variables.xml</variables-url>
     <template-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/Chair.xml</template-url>
     <output-config-url>https://raw.githubusercontent.com/cescoff/rattrapchair/master/chairOutputConfig.xml</output-config-url>
