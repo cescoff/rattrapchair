@@ -38,8 +38,8 @@
 	</arc>
 	<arc name="RoundCornerTopRight" layer="Main" radius="${filetRadius}" action="CUT">
 		<center x="SeatHingeTopRight//Center//2*${upright}-${filetRadius}" y="SeatHingeTopRight//Center//${filetRadius}-${upright}" />
-		<point1 x="SeatHingeTopRight//Center//2*${upright}" y="SeatHingeTopRight//Center//${filetRadius}-${upright}" />
-		<point2 x="SeatHingeTopRight//Center//2*${upright}-${filetRadius}" y="SeatHingeTopRight//Center//-${upright}" />
+		<point1 x="SeatHingeTopRight//Center//2*${upright}-${filetRadius}" y="SeatHingeTopRight//Center//-${upright}" />
+		<point2 x="SeatHingeTopRight//Center//2*${upright}" y="SeatHingeTopRight//Center//${filetRadius}-${upright}" />
 	</arc>
 	<arc name="RoundCornerBottomRight" layer="Main" radius="${filetRadius}" action="CUT">
 		<center x="SeatHingeBottomRight//Center//2*${upright}-${filetRadius}" y="SeatHingeBottomRight//Center//${upright}-${filetRadius}" />
@@ -48,8 +48,8 @@
 	</arc>
 	<arc name="RoundCornerBottomLeft" layer="Main" radius="${filetRadius}" action="CUT">
 		<center x="SeatHingeBottomLeft//Center//${filetRadius}" y="SeatHingeBottomLeft//Center//${upright}-${filetRadius}" />
-		<point1 x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//${upright}-${filetRadius}" />
-		<point2 x="SeatHingeBottomLeft//Center//${filetRadius}" y="SeatHingeBottomLeft//Center//${upright}" />
+		<point1 x="SeatHingeBottomLeft//Center//${filetRadius}" y="SeatHingeBottomLeft//Center//${upright}" />
+		<point2 x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//${upright}-${filetRadius}" />
 	</arc>
 	
 	<!-- Alignment Holes -->
