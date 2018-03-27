@@ -16,7 +16,7 @@
 	
     	<variable name="fullSeatwidth" value="320.0"/>
     	<variable name="fullUpright" value="50.0"/>
-	
+	<variable name="fullFiletRadius" value="25"/>
 	
 	<variable name="fullChairThickness" value="25.0"/>
 	<variable name="ratio" value="1.0"/>
@@ -35,6 +35,7 @@
 	<!-- Autoscale expressions -->
 	<expression name="alpha" print="true" expression="(${alphaDeg}*Math.PI)/180"/>
 	<expression name="beta" print="true" expression="(${betaDeg}*Math.PI)/180"/>
+	<expression name="filetRadius" print="true" expression="${fullFiletRadius}/${ratio}"/>
 	<!-- s -->
 	<expression name="fullhorizontalSeatLength" print="true" expression="${fullSeatLength} * Math.cos(${beta})" />
 	<expression name="horizontalseatlength" expression="${fullhorizontalSeatLength}/${ratio}" />
