@@ -30,39 +30,61 @@
 
 	<point x="SeatHingeTopRight//Center//2*${upright}" y="SeatHingeTopRight//Center//-${upright}" name="GlobalTopRightPoint" layer="Main" />
 
+    	<!-- Filets -->
+	<arc name="RoundCornerTopLeft" layer="Main" radius="${filetRadius}" action="CUT">
+		<center x="SeatHingeTopLeft//Center//${filetRadius}" y="SeatHingeTopLeft//Center//${filetRadius}-${upright}" />
+		<point1 x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//${filetRadius}-${upright}" />
+		<point2 x="SeatHingeTopLeft//Center//${filetRadius}" y="SeatHingeTopLeft//Center//0" />
+	</arc>
+	<arc name="RoundCornerTopRight" layer="Main" radius="${filetRadius}" action="CUT">
+		<center x="SeatHingeTopRight//Center//-${filetRadius}" y="SeatHingeTopRight//Center//${filetRadius}-${upright}" />
+		<point1 x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//${filetRadius}-${upright}" />
+		<point2 x="SeatHingeTopRight//Center//-${filetRadius}" y="SeatHingeTopRight//Center//0" />
+	</arc>
+	<arc name="RoundCornerBottomRight" layer="Main" radius="${filetRadius}" action="CUT">
+		<center x="SeatHingeBottomRight//Center//-${filetRadius}" y="SeatHingeBottomRight//Center//${upright}-${filetRadius}" />
+		<point1 x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//${upright}-${filetRadius}" />
+		<point2 x="SeatHingeBottomRight//Center//-${filetRadius}" y="SeatHingeBottomRight//Center//0" />
+	</arc>
+	<arc name="RoundCornerBottomLeft" layer="Main" radius="${filetRadius}" action="CUT">
+		<center x="SeatHingeBottomLeft//Center//${filetRadius}" y="SeatHingeBottomLeft//Center//${upright}-${filetRadius}" />
+		<point1 x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//${upright}-${filetRadius}" />
+		<point2 x="SeatHingeBottomLeft//Center//${filetRadius}" y="SeatHingeBottomLeft//Center//0" />
+	</arc>
+	
 	<!-- Alignment Holes -->
 	<!-- Corner Holes -->
-    <circle center-x="SeatHingeTopLeft//Center//+${upright}/2" center-y="SeatHingeTopLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleTopLeft" layer="Main"/>
-    <circle center-x="SeatHingeTopRight//Center//+${upright}" center-y="SeatHingeTopRight//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleTopRight" layer="Main"/>
-    <circle center-x="SeatHingeBottomLeft//Center//+${upright}/2" center-y="SeatHingeBottomLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleBottomLeft" layer="Main"/>
-    <circle center-x="SeatHingeBottomRight//Center//+${upright}" center-y="SeatHingeBottomRight//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleBottomRight" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${upright}/2" center-y="SeatHingeTopLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopRight//Center//+${upright}" center-y="SeatHingeTopRight//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleTopRight" layer="Main"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//+${upright}/2" center-y="SeatHingeBottomLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleBottomLeft" layer="Main"/>
+    	<circle center-x="SeatHingeBottomRight//Center//+${upright}" center-y="SeatHingeBottomRight//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleBottomRight" layer="Main"/>
 
 	<!-- Seat Holes -->
-    <circle center-x="SeatHingeTopMiddle//Center//${seathingeheight}/2+${upright}/2" center-y="SeatHingeTopMiddle//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleTopLeft" layer="Main"/>
-    <circle center-x="SeatHingeBottomMiddle//Center//${seathingeheight}/2+${upright}/2" center-y="SeatHingeBottomMiddle//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleBottomLeft" layer="Main"/>
-    <circle center-x="SeatHingeTopAxleCut//Center//-${seataxledistance}-2*${holeradius}-${upright}/2" center-y="SeatHingeTopAxleCut//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleTopRight" layer="Main"/>
-    <circle center-x="SeatHingeBottomAxleCut//Center//-${seataxledistance}-2*${holeradius}-${upright}/2" center-y="SeatHingeBottomAxleCut//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleBottomRight" layer="Main"/>
+    	<circle center-x="SeatHingeTopMiddle//Center//${seathingeheight}/2+${upright}/2" center-y="SeatHingeTopMiddle//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeBottomMiddle//Center//${seathingeheight}/2+${upright}/2" center-y="SeatHingeBottomMiddle//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleBottomLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopAxleCut//Center//-${seataxledistance}-2*${holeradius}-${upright}/2" center-y="SeatHingeTopAxleCut//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleTopRight" layer="Main"/>
+    	<circle center-x="SeatHingeBottomAxleCut//Center//-${seataxledistance}-2*${holeradius}-${upright}/2" center-y="SeatHingeBottomAxleCut//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleBottomRight" layer="Main"/>
 	
 	<!-- Leg Holes -->
-    <circle center-x="SeatHingeTopLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopLeft" layer="Main"/>
-    <circle center-x="SeatHingeBottomLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleBottomLeft" layer="Main"/>
-    <circle center-x="SeatHingeTopMiddle//Center//-${seathingeheight}/2-${upright}/2" center-y="SeatHingeTopMiddle//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopRight" layer="Main"/>
-    <circle center-x="SeatHingeBottomMiddle//Center//-${seathingeheight}/2-${upright}/2" center-y="SeatHingeBottomMiddle//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleBottomRight" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleBottomLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopMiddle//Center//-${seathingeheight}/2-${upright}/2" center-y="SeatHingeTopMiddle//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopRight" layer="Main"/>
+    	<circle center-x="SeatHingeBottomMiddle//Center//-${seathingeheight}/2-${upright}/2" center-y="SeatHingeBottomMiddle//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleBottomRight" layer="Main"/>
 
-    <circle center-x="SeatHingeTopLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} - ${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeTopLeft" layer="Main"/>
-    <circle center-x="SeatHingeTopLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} - ${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeBottomLeft" layer="Main"/>
-    <circle center-x="SeatHingeTopLeft//Center//+${rearlegaxledistance} + ${hingeholeradius} + ${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeTopRight" layer="Main"/>
-    <circle center-x="SeatHingeTopLeft//Center//+${rearlegaxledistance} + ${hingeholeradius} + ${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeBottomRight" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} - ${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} - ${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeBottomLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${rearlegaxledistance} + ${hingeholeradius} + ${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeTopRight" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${rearlegaxledistance} + ${hingeholeradius} + ${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleHingeBottomRight" layer="Main"/>
 
 	<!-- Cut Holes -->
-    <circle center-x="SeatHingeTopLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} -${upright}/2" center-y="SeatHingeTopLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleAxleTopLeft" layer="Main"/>
-    <circle center-x="SeatHingeBottomLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} -${upright}/2" center-y="SeatHingeBottomLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleAxleBottomLeft" layer="Main"/>
-    <circle center-x="SeatHingeTopLeft//Center//${frontlegaxledistance} + ${hingeholeradius} +${upright}/2" center-y="SeatHingeTopLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceTopLeftAxle" layer="Main"/>
-    <circle center-x="SeatHingeBottomLeft//Center//+${frontlegaxledistance} + ${hingeholeradius} +${upright}/2" center-y="SeatHingeBottomLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceBottomLeftAxle" layer="Main"/>
-    <circle center-x="SeatHingeTopLeft//Center//+${cutlength}-${upright}/2" center-y="SeatHingeTopRight//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceTopRight" layer="Main"/>
-    <circle center-x="SeatHingeBottomLeft//Center//+${cutlength}-${upright}/2" center-y="SeatHingeBottomRight//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceBottomRight" layer="Main"/>
-    <circle center-x="SeatHingeTopLeft//Center//+${cutlength}+${upright}/2" center-y="SeatHingeTopRight//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceTopLeft" layer="Main"/>
-    <circle center-x="SeatHingeBottomLeft//Center//+${cutlength}+${upright}/2" center-y="SeatHingeBottomRight//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceBottomLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} -${upright}/2" center-y="SeatHingeTopLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleAxleTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//+${frontlegaxledistance} - ${hingeholeradius} -${upright}/2" center-y="SeatHingeBottomLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleAxleBottomLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//${frontlegaxledistance} + ${hingeholeradius} +${upright}/2" center-y="SeatHingeTopLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceTopLeftAxle" layer="Main"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//+${frontlegaxledistance} + ${hingeholeradius} +${upright}/2" center-y="SeatHingeBottomLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceBottomLeftAxle" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${cutlength}-${upright}/2" center-y="SeatHingeTopRight//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceTopRight" layer="Main"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//+${cutlength}-${upright}/2" center-y="SeatHingeBottomRight//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceBottomRight" layer="Main"/>
+	<circle center-x="SeatHingeTopLeft//Center//+${cutlength}+${upright}/2" center-y="SeatHingeTopRight//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//+${cutlength}+${upright}/2" center-y="SeatHingeBottomRight//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="HoleSliceBottomLeft" layer="Main"/>
 	
 	<!-- ******** -->
 	<!-- Top Face -->
