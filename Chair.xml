@@ -66,7 +66,7 @@
     	<circle center-x="SeatHingeBottomAxleCut//Center//-${seataxledistance}-2*${holeradius}-${upright}/2" center-y="SeatHingeBottomAxleCut//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="SeatCenterHoleBottomRight" layer="Main"/>
 	
 	<!-- Leg Holes -->
-    	<circle center-x="SeatHingeTopLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeTopLeft//Center//+${fullSeatwidth}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopLeft" layer="Main"/>
+    	<circle center-x="SeatHingeTopLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeTopLeft//Center//+${fullSeatwidth}/2" radius="${holeradius}" action="CUT" name="LegCenterHole" layer="Main"/>
     	<circle center-x="SeatHingeTopLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeTopLeft//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopLeft" layer="Main"/>
     	<circle center-x="SeatHingeBottomLeft//Center//+${upright}+${upright}/2" center-y="SeatHingeBottomLeft//Center//-${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleBottomLeft" layer="Main"/>
     	<circle center-x="SeatHingeTopMiddle//Center//-${seathingeheight}/2-${upright}/2" center-y="SeatHingeTopMiddle//Center//+${upright}/2" radius="${holeradius}" action="CUT" name="LegCenterHoleTopRight" layer="Main"/>
